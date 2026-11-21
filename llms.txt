@@ -29,6 +29,8 @@ Web personal y currículum de Eliseo Población Fernández. Todo el contenido es
 ## Páginas
 
 - [Inicio y currículum](https://eliseopoblacion.com/): perfil, proyectos, experiencia completa, formación y contacto.
+- [Werop](https://eliseopoblacion.com/proyectos/werop/): qué es, qué problema resuelve, dónde usa la IA y el papel de Eliseo Población como cofundador.
+- [Chulair](https://eliseopoblacion.com/proyectos/chulair/): qué hace, cómo está construida y cómo dio origen a Werop.
 - [Hitos profesionales](https://eliseopoblacion.com/trayectoria/): la carrera en 15 hitos.
 - [Hitos de Werop y Chulair](https://eliseopoblacion.com/hitos/): 28 hitos de los dos proyectos, de marzo a noviembre de 2026, con la versión de la bitácora que respalda cada uno.
 
