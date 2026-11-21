@@ -195,7 +195,7 @@
   }
   .lead {
     font-family: var(--serif); font-size: clamp(20px, 2.6vw, 25px);
-    line-height: 1.4; margin: 0 0 28px; max-width: 34em; text-wrap: pretty;
+    line-height: 1.4; margin: 0 0 28px; text-wrap: pretty;
   }
   .contact { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 15px; color: var(--muted); padding: 0; margin: 0; list-style: none; }
   .contact a { color: var(--ink); }
@@ -218,7 +218,7 @@
     font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
     color: var(--muted); font-weight: 600; margin: 0 0 24px;
   }
-  .prose p { margin: 0 0 16px; max-width: 42em; text-wrap: pretty; }
+  .prose p { margin: 0 0 16px; }
 
   nav { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 22px 0 0; font-size: 14.5px; }
   nav a { text-decoration: none; color: var(--muted); }
@@ -250,8 +250,9 @@
   .job .when { font-size: 14px; color: var(--muted); padding-top: 5px; font-variant-numeric: tabular-nums; }
   .job h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.2; margin: 0 0 4px; }
   .job .role { font-size: 15.5px; color: var(--accent); font-weight: 600; margin: 0 0 12px; }
-  .job p { margin: 0 0 12px; max-width: 42em; }
-  .job ul { margin: 0; padding-left: 18px; max-width: 42em; }
+  .job p { margin: 0 0 12px; }
+  .job ul { margin: 0; padding-left: 18px; }
+  @media (min-width: 681px) { .lead, .prose p, .job p, .job li { text-align: justify; hyphens: auto; } }
   .job li { margin-bottom: 7px; }
   .job li::marker { color: var(--accent); }
 

@@ -38,7 +38,7 @@ nav .brand { font-family: var(--serif); font-weight: 600; color: var(--ink); mar
 h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(36px, 6.5vw, 60px); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 20px; text-wrap: balance; }
 .lead { font-family: var(--serif); font-size: clamp(20px, 2.6vw, 24px); line-height: 1.4; color: var(--muted); margin: 0 0 36px; text-wrap: pretty; }
 
-.note { max-width: 680px; padding: 64px 0 0; }
+.note { padding: 64px 0 0; }
 .note h2 { font-family: var(--serif); font-size: 27px; font-weight: 600; line-height: 1.2; margin: 44px 0 14px; }
 .note p { margin: 0 0 20px; text-wrap: pretty; }
 .note ul { margin: 0 0 20px; padding-left: 20px; }
@@ -46,8 +46,10 @@ h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(36px, 6.5vw, 
 .note li::marker { color: var(--accent); }
 .note .byline { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 15.5px; color: var(--muted); }
 
-.index { padding: 64px 0 8px; max-width: 680px; }
-.list { list-style: none; padding: 0; margin: 0; max-width: 680px; }
+.index { padding: 64px 0 8px; }
+.list { list-style: none; padding: 0; margin: 0; }
+@media (min-width: 681px) { .note p, .note li, .lead, .list p { text-align: justify; hyphens: auto; } .note .eyebrow, .note .byline { text-align: left; } }
+
 .list li { padding: 26px 0; border-top: 1px solid var(--line); }
 .list a { text-decoration: none; }
 .list h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; line-height: 1.2; margin: 0 0 6px; }
