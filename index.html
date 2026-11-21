@@ -27,7 +27,7 @@
     { "@type": "CollegeOrUniversity", "name": "Universidad Politécnica de Madrid" },
     { "@type": "CollegeOrUniversity", "name": "Universidad Alfonso X el Sabio" }
   ],
-  "sameAs": ["https://www.linkedin.com/in/epoblacion", "https://chulair.com"]
+  "sameAs": ["https://www.linkedin.com/in/epoblacion", "https://www.werop.com/", "https://chulair.com/"]
 }
 </script>
 <style>
@@ -101,6 +101,23 @@
   }
   .prose p { margin: 0 0 16px; max-width: 42em; text-wrap: pretty; }
 
+  nav { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 22px 0 0; font-size: 14.5px; }
+  nav a { text-decoration: none; color: var(--muted); }
+  nav a:hover { color: var(--accent); }
+  nav .brand { font-family: var(--serif); font-weight: 600; color: var(--ink); margin-right: auto; font-size: 17px; }
+
+  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card {
+    border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+    padding: 24px 24px 22px; display: flex; flex-direction: column;
+  }
+  .card .kind { font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 8px; }
+  .card h3 { font-family: var(--serif); font-size: 30px; font-weight: 600; line-height: 1.1; margin: 0 0 10px; }
+  .card p { margin: 0 0 14px; font-size: 16px; }
+  .card ul { margin: 0 0 18px; padding-left: 18px; font-size: 15px; color: var(--muted); }
+  .card li { margin-bottom: 4px; }
+  .card .go { margin-top: auto; font-weight: 600; font-size: 15.5px; }
+
   .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
   .tags li {
     font-size: 14.5px; padding: 6px 12px; border: 1px solid var(--line);
@@ -145,6 +162,7 @@
     .job { grid-template-columns: 1fr; padding: 22px 0; }
     .job .when { padding-top: 0; }
     .two { grid-template-columns: 1fr; gap: 0; }
+    .projects { grid-template-columns: 1fr; }
     .two > div + div { padding-top: 56px; }
   }
 
@@ -164,7 +182,9 @@
     .job h3 { font-size: 13pt; }
     .tags li { border: 0; padding: 0; }
     .tags li:not(:last-child)::after { content: " ·"; }
-    footer, .noprint { display: none; }
+    footer, nav, .noprint { display: none; }
+    .card { break-inside: avoid; padding: 8pt 10pt; }
+    .card h3 { font-size: 14pt; }
     a { text-decoration: none; }
     @page { margin: 16mm; }
   }
@@ -173,15 +193,24 @@
 <body>
 <div class="wrap">
 
+<nav aria-label="Secciones">
+  <a class="brand" href="#">Eliseo Población</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#perfil">Sobre mí</a>
+  <a href="#experiencia">Trayectoria</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
 <header>
-  <p class="eyebrow">CTO · Plataformas digitales a gran escala · Cloud e IA</p>
+  <p class="eyebrow">Cofundador de Werop · Fundador de Chulair · CTO</p>
   <h1>Eliseo Población Fernández</h1>
-  <p class="lead">Dirijo la plataforma que sirve todas las imágenes de producto de El Corte Inglés y construyo productos de primera mano con IA.</p>
-  <ul class="contact">
+  <p class="lead">Dirijo la plataforma que sirve todas las imágenes de producto de El Corte Inglés. Soy cofundador de Werop, un marketplace europeo de moda independiente, y fundador de Chulair, su probador virtual con IA.</p>
+  <ul class="contact" id="contacto">
     <li>Madrid, España (remoto)</li>
     <li><a href="mailto:epoblacion@gmail.com">epoblacion@gmail.com</a></li>
     <li><a href="https://www.linkedin.com/in/epoblacion" rel="me noopener">linkedin.com/in/epoblacion</a></li>
-    <li><a href="https://chulair.com" rel="me noopener">chulair.com</a></li>
+    <li><a href="https://www.werop.com/" rel="me noopener">werop.com</a></li>
+    <li><a href="https://chulair.com/" rel="me noopener">chulair.com</a></li>
   </ul>
 </header>
 
@@ -193,6 +222,36 @@
 </div>
 
 <main>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="projects">
+    <article class="card">
+      <p class="kind">Marketplace · desde noviembre de 2026</p>
+      <h3>Werop</h3>
+      <p>Marketplace europeo de moda independiente, con base en España, donde las prendas se pueden probar virtualmente con inteligencia artificial antes de comprarlas.</p>
+      <ul>
+        <li>Solo marcas y diseñadores con producto propio y nuevo</li>
+        <li>Tiendas de 7 países europeos; web en 7 idiomas</li>
+        <li>Comisión plana del 12 % + IVA, sin cuotas</li>
+        <li>Abierto al público desde noviembre de 2026</li>
+      </ul>
+      <a class="go" href="https://www.werop.com/nosotros/" rel="noopener">Conoce Werop →</a>
+    </article>
+    <article class="card">
+      <p class="kind">Aplicación · desde mayo de 2026</p>
+      <h3>Chulair</h3>
+      <p>Aplicación de probador virtual con inteligencia artificial: ves cómo te queda una prenda sobre tu propia foto antes de comprarla.</p>
+      <ul>
+        <li>Web y apps para Android e iPhone, en 16 idiomas</li>
+        <li>Presente en 78 países</li>
+        <li>Más de 2.000 usuarios registrados</li>
+        <li>Las prendas de Werop se pueden probar en Chulair</li>
+      </ul>
+      <a class="go" href="https://chulair.com/" rel="noopener">Ir a Chulair →</a>
+    </article>
+  </div>
+</section>
 
 <section class="prose" id="perfil">
   <h2>Perfil</h2>
@@ -247,6 +306,20 @@
         <li>Operación automatizada de extremo a extremo, sin intervención humana.</li>
         <li>Disponible en 78 países: en Europa, abierta al público con límites de cuota; en el resto del mundo, mediante suscripción.</li>
         <li>Más de 2.000 usuarios registrados, más de 1.400 aplicaciones instaladas y 150 activos diarios.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Nov. 2026 – actualidad<br>Proyecto propio</div>
+    <div>
+      <h3><a href="https://www.werop.com/" rel="noopener">Werop</a></h3>
+      <p class="role">Cofundador</p>
+      <p>Marketplace europeo de moda independiente, con base en España. Nació en noviembre de 2026, a partir de una función de Chulair.</p>
+      <ul>
+        <li>Catálogo común para tiendas de 7 países europeos y compradores de 10.</li>
+        <li>IA donde quita fricción: probador virtual con Chulair, fotos de catálogo sin estudio a partir de una foto de móvil y búsqueda por imagen.</li>
+        <li>Pagos con Stripe directos a la cuenta de cada tienda; web en 7 idiomas y apps en Google Play y App Store.</li>
       </ul>
     </div>
   </article>
