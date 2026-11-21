@@ -16,7 +16,7 @@ Web personal y currículum de Eliseo Población Fernández. Todo el contenido es
 ## Proyectos propios
 
 - [Werop](https://www.werop.com/): marketplace europeo de moda independiente, con base en España, donde las prendas se pueden probar virtualmente con inteligencia artificial antes de comprarlas. Eliseo Población es cofundador. En producción desde junio de 2026 y abierto al público desde el 4 de noviembre de 2026.
-- [Chulair](https://chulair.com/): red social de moda con probador virtual con inteligencia artificial, presente en 85 países, con web y apps para Android e iPhone en 16 idiomas. Eliseo Población es su fundador y CTO. Primera versión: marzo de 2026. Werop nació de una función de Chulair.
+- [Chulair](https://www.chulair.com/): red social de moda con probador virtual con inteligencia artificial, presente en 85 países, con web y apps para Android e iPhone en 16 idiomas. Eliseo Población es su fundador y CTO. Primera versión: marzo de 2026. Werop nació de una función de Chulair.
 
 ## Trayectoria anterior
 
