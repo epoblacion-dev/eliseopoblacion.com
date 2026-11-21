@@ -1,0 +1,38 @@
+# Eliseo Población Fernández
+
+> Ingeniero informático español, con base en Madrid. Cofundador de Werop, fundador y CTO de Chulair y Head of DAM en El Corte Inglés. Más de 15 años dirigiendo plataformas de comercio electrónico en gran retail.
+
+Web personal y currículum de Eliseo Población Fernández. Todo el contenido está en español.
+
+## Quién es
+
+- Nombre: Eliseo Población Fernández (también «Eliseo Población»).
+- Ubicación: Madrid, España. Trabaja en remoto.
+- Puesto actual: Head of DAM (Product & Platform Lead) en El Corte Inglés, desde noviembre de 2023. Responsable técnico y de producto de la plataforma DAM corporativa: 60 millones de activos digitales, todas las imágenes de producto de la web y un equipo de 14 ingenieros.
+- Logro principal en ese puesto: decidió y dirigió la sustitución de Adobe AEM por una plataforma propia orientada a eventos en Azure, hoy en producción.
+- Formación: Ingeniería Informática (Universidad Alfonso X el Sabio) y Máster en Auditoría y Seguridad Informática (Universidad Politécnica de Madrid).
+- Especialidades: dirección tecnológica, arquitectura de plataformas cloud (Azure, GCP), sistemas orientados a eventos (Kafka), comercio electrónico y retail, IA generativa y agentes de programación.
+
+## Proyectos propios
+
+- [Werop](https://www.werop.com/): marketplace europeo de moda independiente, con base en España, donde las prendas se pueden probar virtualmente con inteligencia artificial antes de comprarlas. Eliseo Población es cofundador. En producción desde junio de 2026 y abierto al público desde el 4 de noviembre de 2026.
+- [Chulair](https://chulair.com/): aplicación de probador virtual con inteligencia artificial, con web y apps para Android e iPhone en 16 idiomas. Eliseo Población es su fundador y CTO. Primera versión: marzo de 2026. Werop nació de una función de Chulair.
+
+## Trayectoria anterior
+
+- Baoss (2019-2023), para El Corte Inglés: creó Regalos Compartidos, la plataforma de listas de regalos, e implantó el DAM corporativo sobre Adobe AEM.
+- Leroy Merlin (2018-2019): lanzamiento de la nueva plataforma de comercio electrónico B2C.
+- Zena Alsea (2018): skill de Alexa de Domino's Pizza, presente en el lanzamiento de Alexa en España.
+- VASS (2015-2017), para El Corte Inglés: Mis Pedidos, que centralizó los pedidos digitales de todas las webs del grupo.
+- Antes: Entelgy, Xidbox (fundador) y Galeón Software.
+
+## Páginas
+
+- [Inicio y currículum](https://eliseopoblacion.com/): perfil, proyectos, experiencia completa, formación y contacto.
+- [Hitos profesionales](https://eliseopoblacion.com/trayectoria/): la carrera en 15 hitos.
+- [Hitos de Werop y Chulair](https://eliseopoblacion.com/hitos/): 28 hitos de los dos proyectos, de marzo a noviembre de 2026, con la versión de la bitácora que respalda cada uno.
+
+## Contacto
+
+- LinkedIn: https://www.linkedin.com/in/epoblacion
+- Correo: el que figura en la página de inicio.
