@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliseo Población · CTO · Plataformas digitales a gran escala e IA</title>
+<meta name="description" content="Eliseo Población Fernández. Dirección técnica de plataformas digitales a gran escala, arquitectura cloud e IA. Head of DAM en El Corte Inglés y fundador de Chulair.">
+<link rel="canonical" href="https://eliseopoblacion.com/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Eliseo Población · CTO">
+<meta property="og:description" content="Dirección técnica de plataformas digitales a gran escala, arquitectura cloud e IA.">
+<meta property="og:url" content="https://eliseopoblacion.com/">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b1a17'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23f6f3ec'%3EEP%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eliseo Población Fernández",
+  "url": "https://eliseopoblacion.com/",
+  "jobTitle": "Head of DAM (Product & Platform Lead)",
+  "worksFor": { "@type": "Organization", "name": "El Corte Inglés" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad Politécnica de Madrid" },
+    { "@type": "CollegeOrUniversity", "name": "Universidad Alfonso X el Sabio" }
+  ],
+  "sameAs": ["https://www.linkedin.com/in/epoblacion", "https://chulair.com"]
+}
+</script>
+<style>
+  :root {
+    --bg: #f6f3ec;
+    --surface: #efeae0;
+    --ink: #1b1a17;
+    --muted: #6a655b;
+    --line: #d9d2c4;
+    --accent: #a63f27;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141311;
+      --surface: #1d1b18;
+      --ink: #ebe6db;
+      --muted: #a39c8e;
+      --line: #34302a;
+      --accent: #e58a6c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 72px 0 40px; }
+  .eyebrow {
+    font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 18px;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(40px, 8vw, 76px); line-height: 1.02;
+    letter-spacing: -.02em; margin: 0 0 20px; text-wrap: balance;
+  }
+  .lead {
+    font-family: var(--serif); font-size: clamp(20px, 2.6vw, 25px);
+    line-height: 1.4; margin: 0 0 28px; max-width: 34em; text-wrap: pretty;
+  }
+  .contact { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 15px; color: var(--muted); padding: 0; margin: 0; list-style: none; }
+  .contact a { color: var(--ink); }
+
+  .figures {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    margin: 8px 0 0;
+  }
+  .figures div { padding: 22px 16px 20px 0; }
+  .figures div + div { padding-left: 20px; border-left: 1px solid var(--line); }
+  .figures strong {
+    display: block; font-family: var(--serif); font-weight: 600;
+    font-size: clamp(28px, 4.4vw, 42px); line-height: 1.1; letter-spacing: -.01em;
+  }
+  .figures span { font-size: 13.5px; color: var(--muted); line-height: 1.35; display: block; margin-top: 6px; }
+
+  section { padding: 56px 0 0; }
+  h2 {
+    font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; margin: 0 0 24px;
+  }
+  .prose p { margin: 0 0 16px; max-width: 42em; text-wrap: pretty; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .tags li {
+    font-size: 14.5px; padding: 6px 12px; border: 1px solid var(--line);
+    border-radius: 18px; background: var(--surface);
+  }
+
+  .job {
+    display: grid; grid-template-columns: 190px 1fr; gap: 8px 32px;
+    padding: 28px 0; border-top: 1px solid var(--line);
+  }
+  .job .when { font-size: 14px; color: var(--muted); padding-top: 5px; font-variant-numeric: tabular-nums; }
+  .job h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.2; margin: 0 0 4px; }
+  .job .role { font-size: 15.5px; color: var(--accent); font-weight: 600; margin: 0 0 12px; }
+  .job p { margin: 0 0 12px; max-width: 42em; }
+  .job ul { margin: 0; padding-left: 18px; max-width: 42em; }
+  .job li { margin-bottom: 7px; }
+  .job li::marker { color: var(--accent); }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .plain { list-style: none; padding: 0; margin: 0; }
+  .plain li { margin-bottom: 12px; }
+  .plain small { display: block; color: var(--muted); font-size: 14px; }
+
+  footer {
+    margin-top: 72px; padding: 28px 0 56px; border-top: 1px solid var(--line);
+    font-size: 14px; color: var(--muted);
+    display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; align-items: center;
+  }
+  button.print {
+    font: inherit; color: var(--ink); background: none; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px;
+  }
+  button.print:hover { border-color: var(--accent); color: var(--accent); }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    header { padding-top: 44px; }
+    .figures { grid-template-columns: 1fr 1fr; }
+    .figures div:nth-child(3) { padding-left: 0; border-left: 0; }
+    .figures div:nth-child(n+3) { border-top: 1px solid var(--line); }
+    .job { grid-template-columns: 1fr; padding: 22px 0; }
+    .job .when { padding-top: 0; }
+    .two { grid-template-columns: 1fr; gap: 0; }
+    .two > div + div { padding-top: 56px; }
+  }
+
+  @media print {
+    :root { --bg: #fff; --surface: #fff; --ink: #000; --muted: #444; --line: #bbb; --accent: #000; }
+    body { font-size: 10.5pt; line-height: 1.4; }
+    .wrap { max-width: none; padding: 0; }
+    header { padding: 0 0 12pt; }
+    h1 { font-size: 26pt; margin-bottom: 6pt; }
+    .lead { font-size: 12pt; margin-bottom: 8pt; }
+    .eyebrow { margin-bottom: 6pt; }
+    .figures div { padding-top: 8pt; padding-bottom: 8pt; }
+    .figures strong { font-size: 16pt; }
+    section { padding-top: 16pt; }
+    h2 { margin-bottom: 8pt; }
+    .job { padding: 9pt 0; grid-template-columns: 120pt 1fr; break-inside: avoid; }
+    .job h3 { font-size: 13pt; }
+    .tags li { border: 0; padding: 0; }
+    .tags li:not(:last-child)::after { content: " ·"; }
+    footer, .noprint { display: none; }
+    a { text-decoration: none; }
+    @page { margin: 16mm; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">CTO · Plataformas digitales a gran escala · Cloud e IA</p>
+  <h1>Eliseo Población Fernández</h1>
+  <p class="lead">Dirijo la plataforma que sirve todas las imágenes de producto de El Corte Inglés y construyo productos de primera mano con IA.</p>
+  <ul class="contact">
+    <li>Madrid, España (remoto)</li>
+    <li><a href="mailto:epoblacion@gmail.com">epoblacion@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/epoblacion" rel="me noopener">linkedin.com/in/epoblacion</a></li>
+    <li><a href="https://chulair.com" rel="me noopener">chulair.com</a></li>
+  </ul>
+</header>
+
+<div class="figures">
+  <div><strong>+15 años</strong><span>dirigiendo plataformas críticas de e-commerce en gran retail</span></div>
+  <div><strong>60 M</strong><span>de activos digitales en el DAM de El Corte Inglés</span></div>
+  <div><strong>14</strong><span>ingenieros en el equipo que dirijo</span></div>
+  <div><strong>78 países</strong><span>donde opera Chulair, construido íntegramente con IA</span></div>
+</div>
+
+<main>
+
+<section class="prose" id="perfil">
+  <h2>Perfil</h2>
+  <p>Ingeniero informático con más de 15 años diseñando, construyendo y dirigiendo plataformas críticas de comercio electrónico en gran retail (El Corte Inglés, Leroy Merlin, Alsea). Hoy soy el responsable técnico y de producto de la plataforma DAM de El Corte Inglés: 60 millones de activos digitales, todas las imágenes de producto de su web y un equipo de 14 ingenieros. Decidí y dirigí la sustitución de Adobe AEM por una arquitectura propia orientada a eventos en Azure, hoy en producción.</p>
+  <p>En paralelo he creado <a href="https://chulair.com" rel="noopener">Chulair</a>, un proyecto construido íntegramente con IA que empezó como prueba de concepto y hoy es una red social de moda presente en 78 países, que opera sin intervención humana, con más de 2.000 usuarios registrados, más de 1.400 aplicaciones instaladas y 150 activos diarios.</p>
+  <p>Me interesa la dirección de tecnología con responsabilidad técnica real: decido arquitectura, respondo de la operación y sigo construyendo de primera mano, también con IA.</p>
+</section>
+
+<section id="especialidad">
+  <h2>Áreas de especialidad</h2>
+  <ul class="tags">
+    <li>Estrategia y dirección tecnológica</li>
+    <li>Arquitectura de plataformas cloud (Azure, GCP)</li>
+    <li>Sistemas distribuidos y orientados a eventos (Kafka)</li>
+    <li>Build vs. buy: de producto comercial a plataforma propia</li>
+    <li>IA generativa y agentes de programación</li>
+    <li>Dirección de equipos de ingeniería</li>
+    <li>Roadmap de producto</li>
+    <li>E-commerce y retail</li>
+    <li>Gestión de proveedores</li>
+  </ul>
+</section>
+
+<section id="experiencia">
+  <h2>Experiencia</h2>
+
+  <article class="job">
+    <div class="when">Nov. 2023 – actualidad<br>Remoto</div>
+    <div>
+      <h3>El Corte Inglés</h3>
+      <p class="role">Head of DAM · Product &amp; Platform Lead</p>
+      <p>Máximo responsable técnico y de producto de la plataforma DAM corporativa: el repositorio único de activos digitales de producto para comercio electrónico, marketing y el resto de áreas del grupo. Vía hiberus desde 2025.</p>
+      <ul>
+        <li>Rediseñé la arquitectura completa y dirigí la sustitución de Adobe AEM por una plataforma propia en Azure (AI Search, Blob Storage, Kafka, Akamai Image Manager), con mejor rendimiento, escalabilidad e integración con terceros.</li>
+        <li>La plataforma gestiona 60 millones de activos digitales, que cubren la totalidad de los productos de la web de El Corte Inglés.</li>
+        <li>Dirijo un equipo de 14 ingenieros (team leader, arquitectos, front y back), con responsabilidad sobre arquitectura, roadmap, entrega y operación.</li>
+        <li>Redefiní por completo el roadmap de producto del DAM, priorizando por ROI, impacto en cliente y complejidad técnica, y actúo como Product Owner ante negocio y el resto de áreas de e-commerce (PIM, tienda online, front).</li>
+        <li>Lancé un frontal web de gestión masiva de activos con retoque automático de imágenes mediante IA, que acortó el tiempo de publicación.</li>
+        <li>La nueva arquitectura orientada a eventos permite consumir cualquier activo conociendo solo su referencia, sin integraciones por API, y ha reducido el time to market de los evolutivos.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">May. 2026 – actualidad<br>Proyecto propio</div>
+    <div>
+      <h3><a href="https://chulair.com" rel="noopener">Chulair</a></h3>
+      <p class="role">Fundador y CTO</p>
+      <p>Proyecto construido íntegramente con IA como prueba de concepto; hoy es una red social de moda presente en 78 países que opera sin intervención humana (armario digital, creación de outfits, comunidad y probador virtual).</p>
+      <ul>
+        <li>Del concepto a producción en solitario, con agentes de programación (Claude Code): producto, tecnología e infraestructura.</li>
+        <li>Operación automatizada de extremo a extremo, sin intervención humana.</li>
+        <li>Disponible en 78 países: en Europa, abierta al público con límites de cuota; en el resto del mundo, mediante suscripción.</li>
+        <li>Más de 2.000 usuarios registrados, más de 1.400 aplicaciones instaladas y 150 activos diarios.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Abr. 2019 – oct. 2023</div>
+    <div>
+      <h3>Baoss</h3>
+      <p class="role">Senior Software Engineering Manager · cliente: El Corte Inglés</p>
+      <ul>
+        <li>Dirigí un equipo de 8 personas como responsable técnico y de producto, con gestión económica de proyectos y proveedores.</li>
+        <li>Creé desde cero Regalos Compartidos, la plataforma de listas de regalos de El Corte Inglés (base de negocios como Bodamás), integrada con clientes, pagos, promociones y pedidos, y definida sin requisitos de negocio previos.</li>
+        <li>Implanté el DAM corporativo sobre Adobe AEM en sustitución de Documentum y cambié el modelo de ingesta de activos para que cualquier frontal web los consuma y renderice de forma automática, sin integraciones a medida.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Dic. 2018 – abr. 2019</div>
+    <div>
+      <h3>Leroy Merlin</h3>
+      <p class="role">Jefe de Proyectos de Comercio Electrónico</p>
+      <ul>
+        <li>Incorporado para el lanzamiento de la nueva plataforma de comercio electrónico B2C, coordinando negocio, tecnología y proveedores externos.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Feb. 2018 – dic. 2018</div>
+    <div>
+      <h3>Zena Alsea</h3>
+      <p class="role">Responsable de Proyectos Digitales</p>
+      <ul>
+        <li>Responsable de las soluciones digitales de Domino's Pizza, Foster's Hollywood y Cañas y Tapas, entre otras marcas.</li>
+        <li>Lancé la skill de Alexa de Domino's Pizza (pedido y seguimiento por voz), presente en el lanzamiento de Alexa en España.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">Abr. 2015 – nov. 2017</div>
+    <div>
+      <h3>VASS</h3>
+      <p class="role">Jefe de Proyectos de Comercio Electrónico · cliente: El Corte Inglés</p>
+      <ul>
+        <li>Responsable de las plataformas de comercio electrónico de Hipercor, Bricor y Supermercados de El Corte Inglés.</li>
+        <li>Dirigí el desarrollo de Mis Pedidos, que centralizó por primera vez los pedidos digitales de todas las webs del grupo para la web de cliente y atención al cliente.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="when">2009 – 2015</div>
+    <div>
+      <h3>Etapas anteriores</h3>
+      <ul>
+        <li><strong>Entelgy · Consultor de I+D+i</strong> (2013 – 2015). Memoria técnica y económica del proyecto SLIBE (vídeo en directo desde el móvil), que obtuvo 1.247.570 € de financiación pública en el programa RETOS.</li>
+        <li><strong>Xidbox · Fundador</strong> (2011 – 2013). Plan de negocio, definición y desarrollo del producto.</li>
+        <li><strong>Galeón Software · Jefe de Proyectos</strong> (2009 – 2011). Proyectos de apuestas deportivas y firma electrónica; memoria de I+D con más de 1 M€ de financiación pública aprobada.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section class="two">
+  <div>
+    <h2>Formación</h2>
+    <ul class="plain">
+      <li>Máster en Auditoría y Seguridad Informática<small>Universidad Politécnica de Madrid · 2006 – 2007</small></li>
+      <li>Ingeniería Informática<small>Universidad Alfonso X el Sabio · 1994 – 2001</small></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Idiomas</h2>
+    <ul class="plain">
+      <li>Español<small>Nativo</small></li>
+      <li>Inglés<small>Básico (lectura técnica)</small></li>
+    </ul>
+  </div>
+</section>
+
+<section id="tecnologias">
+  <h2>Tecnologías</h2>
+  <ul class="tags">
+    <li>Azure (AI Search, Blob Storage)</li>
+    <li>Google Cloud</li>
+    <li>Akamai</li>
+    <li>Kafka</li>
+    <li>Docker</li>
+    <li>Java</li>
+    <li>Node.js</li>
+    <li>Vue.js</li>
+    <li>Angular</li>
+    <li>Oracle</li>
+    <li>MongoDB Atlas</li>
+    <li>Elasticsearch</li>
+    <li>Adobe AEM</li>
+    <li>Claude Code</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Eliseo Población Fernández</span>
+  <button class="print" type="button" onclick="window.print()">Imprimir o guardar en PDF</button>
+</footer>
+
+</div>
+</body>
+</html>
