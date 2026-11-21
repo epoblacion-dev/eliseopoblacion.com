@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eliseo Población · Cofundador de Werop, fundador de Chulair y CTO</title>
+<title>Eliseo Población · Director de Tecnología, CTO y fundador de Werop y Chulair</title>
 <meta name="description" content="Eliseo Población Fernández: cofundador de Werop, fundador de Chulair y Head of DAM en El Corte Inglés. Más de 15 años dirigiendo plataformas digitales, cloud e IA.">
 <link rel="canonical" href="https://eliseopoblacion.com/">
 <meta name="msvalidate.01" content="FA9E0EC6F0D1B252A0B159AECF762DB1">
@@ -304,6 +304,35 @@
     a { text-decoration: none; }
     @page { margin: 16mm; }
   }
+  @media print {
+    body { font-size: 8.4pt; line-height: 1.25; }
+    .job { break-inside: auto; } .hint-print { display:none; }
+    #aporto, #proyectos, .cta, .figures { display: none !important; } .lead { max-width: none; }
+    header { padding-bottom: 4pt; } h1 { font-size: 21pt; margin-bottom: 3pt; } .lead { font-size: 10.5pt; margin-bottom: 5pt; }
+    .contact { font-size: 8.5pt; gap: 2pt 12pt; }
+    section { padding-top: 9pt; } h2 { margin-bottom: 4pt; font-size: 8pt; }
+    .prose p { margin-bottom: 4pt; max-width: none; }
+    #hablemos { display: none; }
+    .job { padding: 4pt 0; grid-template-columns: 92pt 1fr; gap: 2pt 12pt; }
+    .job h3 { font-size: 11pt; margin: 0; } .job .role { font-size: 9pt; margin-bottom: 2pt; }
+    .job p { margin-bottom: 3pt; max-width: none; } .job ul { max-width: none; padding-left: 12pt; } .job li { margin-bottom: 1.5pt; }
+    .job .when { font-size: 8pt; padding-top: 2pt; }
+    .two { gap: 20pt; } .plain li { margin-bottom: 3pt; } .plain small { font-size: 8pt; }
+    .tags { gap: 0 4pt; } .tags li { font-size: 9pt; }
+    @page { margin: 10mm 12mm; }
+  }
+  .cta { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 26px; }
+  .btn { text-decoration:none; font-size:15.5px; font-weight:600; padding:9px 18px; border:1px solid var(--line); border-radius:999px; }
+  .btn.solid { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+  .btn.solid:hover { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .three { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .three h3 { font-family:var(--serif); font-size:22px; font-weight:600; margin:0 0 6px; }
+  .three p { margin:0; font-size:16px; }
+  .cases { grid-template-columns:repeat(3,1fr); }
+  .cases .card { padding:22px 20px; } .cases .card h3 { font-size:23px; }
+  .cases .card p { font-size:15.5px; } .proves { margin-top:auto !important; padding-top:10px; border-top:1px solid var(--line); }
+  .cases .go { margin-top:12px; }
+  @media (max-width:820px){ .three,.cases { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -316,13 +345,14 @@
   <a href="#experiencia">Trayectoria</a>
   <a href="/trayectoria/">Hitos profesionales</a>
   <a href="/hitos/">Hitos de Werop y Chulair</a>
-  <a href="#contacto">Contacto</a>
+  <a href="#hablemos">Contacto</a>
 </nav>
 
 <header>
-  <p class="eyebrow">Cofundador de Werop · Fundador de Chulair · CTO</p>
+  <p class="eyebrow">Director de Tecnología · CTO · Plataformas digitales e IA</p>
   <h1>Eliseo Población Fernández</h1>
-  <p class="lead">Dirijo la plataforma que sirve todas las imágenes de producto de El Corte Inglés. Soy cofundador de Werop, un marketplace europeo de moda independiente, y fundador de Chulair, una red social de moda con probador virtual.</p>
+  <p class="lead">Diseño, construyo y dirijo plataformas digitales a gran escala. Dirijo la plataforma que sirve todas las imágenes de producto de El Corte Inglés y he llevado a producción dos productos propios, Werop y Chulair, construidos con IA.</p>
+  <p class="cta noprint"><a class="btn solid" href="mailto:epoblacion@gmail.com">Contactar</a><a class="btn" href="https://www.linkedin.com/in/epoblacion" rel="noopener">LinkedIn</a><a class="btn" href="/cv-eliseo-poblacion.pdf">CV en PDF</a></p>
   <ul class="contact" id="contacto">
     <li>Madrid, España (remoto)</li>
     <li><a href="mailto:epoblacion@gmail.com">epoblacion@gmail.com</a></li>
@@ -336,37 +366,45 @@
   <div><strong>+15 años</strong><span>dirigiendo plataformas críticas de e-commerce en gran retail</span></div>
   <div><strong>60 M</strong><span>de activos digitales en el DAM de El Corte Inglés</span></div>
   <div><strong>14</strong><span>ingenieros en el equipo que dirijo</span></div>
-  <div><strong>85 países</strong><span>donde opera Chulair, construido íntegramente con IA</span></div>
+  <div><strong>2</strong><span>productos propios en producción, Werop y Chulair, construidos con IA</span></div>
 </div>
 
 <main>
 
+<section id="aporto">
+  <h2>Qué aporto</h2>
+  <div class="three">
+    <div><h3>Dirección a gran escala</h3><p>Plataformas críticas de comercio electrónico en gran retail: arquitectura, roadmap, equipo y operación.</p></div>
+    <div><h3>Construir desde cero</h3><p>Dos productos propios llevados del concepto a producción, con apps, pagos y usuarios reales.</p></div>
+    <div><h3>IA aplicada</h3><p>Agentes de programación e IA generativa para construir y operar con una estructura muy ligera.</p></div>
+  </div>
+</section>
+
 <section id="proyectos">
-  <h2>Proyectos</h2>
-  <div class="projects">
+  <h2>Tres casos</h2>
+  <div class="projects cases">
     <article class="card">
-      <p class="kind">Marketplace · desde junio de 2026</p>
-      <h3>Werop</h3>
-      <p>Marketplace europeo de moda independiente, con base en España, donde las prendas se pueden probar virtualmente con inteligencia artificial antes de comprarlas.</p>
-      <ul>
-        <li>Solo marcas y diseñadores con producto propio y nuevo</li>
-        <li>Tiendas de 7 países europeos; web en 7 idiomas</li>
-        <li>Comisión plana del 12 % + IVA, sin cuotas</li>
-        <li>Abierto al público desde noviembre de 2026</li>
-      </ul>
-      <a class="go" href="https://www.werop.com/nosotros/" rel="noopener">Conoce Werop →</a>
+      <p class="kind">El Corte Inglés · 2023 – hoy</p>
+      <h3>De Adobe AEM a una plataforma propia</h3>
+      <p>Decidí y dirigí la sustitución de un producto comercial por una arquitectura propia orientada a eventos en Azure, hoy en producción.</p>
+      <ul><li>60 millones de activos digitales</li><li>Todas las imágenes de producto de la web</li><li>Equipo de 14 ingenieros</li></ul>
+      <p class="proves"><strong>Qué demuestra:</strong> transformar una plataforma crítica de gran escala.</p>
     </article>
     <article class="card">
-      <p class="kind">Aplicación · desde marzo de 2026</p>
-      <h3>Chulair</h3>
-      <p>Red social de moda con probador virtual: ves cómo te queda una prenda sobre tu propia foto antes de comprarla.</p>
-      <ul>
-        <li>Web y apps para Android e iPhone, en 16 idiomas</li>
-        <li>Presente en 85 países</li>
-        <li>Más de 2.000 usuarios registrados</li>
-        <li>Las prendas de Werop se pueden probar en Chulair</li>
-      </ul>
+      <p class="kind">Chulair · desde marzo de 2026</p>
+      <h3>Un producto construido con IA</h3>
+      <p>Red social de moda con probador virtual, llevada de prueba de concepto a producto internacional con agentes de programación.</p>
+      <ul><li>Presente en 85 países, en 16 idiomas</li><li>Web y apps para Android e iPhone</li><li>Más de 2.000 usuarios registrados</li></ul>
+      <p class="proves"><strong>Qué demuestra:</strong> ejecución de producto de principio a fin.</p>
       <a class="go" href="https://chulair.com/" rel="noopener">Ir a Chulair →</a>
+    </article>
+    <article class="card">
+      <p class="kind">Werop · desde junio de 2026</p>
+      <h3>Un marketplace europeo</h3>
+      <p>Marketplace de moda independiente con pagos directos a cada tienda, envíos, catálogo común e IA para probar la prenda y para las fotos.</p>
+      <ul><li>Tiendas de 7 países europeos</li><li>Web en 7 idiomas y apps propias</li><li>Abierto al público desde noviembre de 2026</li></ul>
+      <p class="proves"><strong>Qué demuestra:</strong> visión de negocio y arquitectura de plataforma.</p>
+      <a class="go" href="https://www.werop.com/nosotros/" rel="noopener">Conoce Werop →</a>
     </article>
   </div>
   <p style="margin:22px 0 0"><a href="/hitos/"><strong>Los hitos de Werop y Chulair, de marzo a noviembre de 2026 →</strong></a></p>
@@ -377,7 +415,7 @@
   <p>Ingeniero informático con más de 15 años diseñando, construyendo y dirigiendo plataformas críticas de comercio electrónico en gran retail (El Corte Inglés, Leroy Merlin, Alsea). Hoy soy el responsable técnico y de producto de la plataforma DAM de El Corte Inglés: 60 millones de activos digitales, todas las imágenes de producto de su web y un equipo de 14 ingenieros. Decidí y dirigí la sustitución de Adobe AEM por una arquitectura propia orientada a eventos en Azure, hoy en producción.</p>
   <p>En paralelo he creado <a href="https://chulair.com" rel="noopener">Chulair</a>, un proyecto construido íntegramente con IA que empezó como prueba de concepto y hoy es una red social de moda con probador virtual, presente en 85 países, que opera sin intervención humana, con más de 2.000 usuarios registrados, más de 1.400 aplicaciones instaladas y 150 activos diarios.</p>
   <p>De Chulair nació <a href="https://www.werop.com/" rel="noopener">Werop</a>, del que soy cofundador: un marketplace europeo de moda independiente, con base en España, donde las prendas se pueden probar virtualmente antes de comprarlas. Está en producción desde junio de 2026 y abierto al público desde noviembre, con tiendas de siete países europeos.</p>
-  <p>Me interesa la dirección de tecnología con responsabilidad técnica real: decido arquitectura, respondo de la operación y sigo construyendo de primera mano, también con IA.</p>
+  <p>Mi forma de dirigir tecnología es con responsabilidad técnica real: decido arquitectura, respondo de la operación y sigo construyendo de primera mano, también con IA.</p>
 </section>
 
 <section id="especialidad">
@@ -541,6 +579,14 @@
     <li>Adobe AEM</li>
     <li>Claude Code</li>
   </ul>
+</section>
+
+<section id="hablemos">
+  <h2>Hablemos</h2>
+  <div class="prose">
+    <p>Si quieres hablar de dirección de tecnología, de plataformas de comercio electrónico o de cómo se construye un producto con IA, o de Werop y Chulair, escríbeme.</p>
+    <p class="cta"><a class="btn solid" href="mailto:epoblacion@gmail.com">epoblacion@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/epoblacion" rel="noopener">LinkedIn</a></p>
+  </div>
 </section>
 
 </main>
